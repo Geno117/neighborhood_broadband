@@ -15,3 +15,4 @@ create table httpgetspeedmonthly as select unit_id, avg(bytes_sec) as speed, dat
 
 --weekly    datausage
 --monthly   datausage
+\copy 
