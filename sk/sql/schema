@@ -2,6 +2,19 @@ SET CLIENT_ENCODING TO UTF8;
 SET STANDARD_CONFORMING_STRINGS TO ON;
 BEGIN;
 
+DROP TABLE IF EXISTS datausage;
+CREATE TABLE datausage (
+  unit_id      INTEGER, 
+  dtime        TIMESTAMP,
+  sk_tx_bytes  BIGINT,
+  sk_rx_bytes  BIGINT,
+  cust_wired_tx_bytes BIGINT,
+  cust_wired_rx_bytes BIGINT,
+  cust_wifi_tx_bytes BIGINT,
+  cust_wifi_rx_bytes BIGINT,
+  location_id  INTEGER
+); 
+
 DROP TABLE IF EXISTS dlping;
 CREATE TABLE dlping (
   unit_id      INTEGER, 

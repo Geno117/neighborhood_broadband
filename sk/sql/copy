@@ -1,3 +1,4 @@
+\COPY datausage    FROM 'data/curr_datausage.csv'       WITH (FORMAT CSV, HEADER); 
 \COPY dlping       FROM 'data/curr_dlping.csv'       WITH (FORMAT CSV, HEADER); 
 \COPY dns          FROM 'data/curr_dns.csv'          WITH (FORMAT CSV, HEADER); 
 \COPY httpget      FROM 'data/curr_httpget.csv'      WITH (FORMAT CSV, HEADER); 

@@ -2,7 +2,7 @@
 
 # set paswword in ~/.pgpass
 
-sk_psql="psql -d sk -U geno -f "
+sk_psql="psql -p5433 -d sk -U geno -f "
 
 
 $sk_psql sql/schema
